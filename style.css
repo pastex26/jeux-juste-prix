@@ -6,7 +6,6 @@ html {
 h1 {
     text-align: center;
     font-variant: small-caps;
-    font-size: 300%;
 }
 h2 {
     text-align: center;
@@ -22,7 +21,7 @@ p {
 }
 div {
     margin: auto;
-    width: 50%;
+    width: 90%;
     background-color: rgb(30, 30, 41);
     border-radius: 20px;
 }
@@ -31,7 +30,7 @@ div {
 }
 input[type=number] {
     text-align: center;
-    font-size: 50px;
+    font-size: 20px;
 }
 button {
     text-align: center;
