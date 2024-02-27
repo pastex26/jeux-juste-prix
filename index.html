@@ -1,37 +1,30 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Jeux juste-prix</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juste prix</title>
     <link rel="stylesheet" href="style.css">
-    <var id="number"></var>
     <script src="script.js" defer></script>
-
 </head>
-
 <body>
-
-    <div>
-    <h1>Trouver le nombre</h1>
-
-        <p>Trouver le nombre compris entre <strong>1 et 100</strong></p>
-        <br>
+    <div class="division">
+        <h1>Jeux du Juste prix</h1>
+        <p>"Trouvez le nombre aléatoire entre <strong>1 et 100</strong>"</p>
     </div>
-
-    <div>
-        <h1 id="indice">Entrer une reponse</h1>
-
-        <p id="restartIndic"></p>
-
-        <br>
-
-        <h3><input type="number" id="reponse" placeholder="deviner ici" value=""></h3>
-        <h3><button id="btn">Go</button></h3>
-        <h4><button id="restartBtn">Restart</button></h4>
-        <br>
+    <div class="division">
+        <p id="tipsText">"Pourquoi pas <strong>50</strong> pour commencer ?"</p>
+        <input id="input" type="number" min="0" max="100"></button>
+        <h2 id="winReponse"></h2>
+        <p id="coupText">Nombre de coups:</p>
     </div>
-
+    <div class="division" id="historicDiv">
+        <p id="historic">Historique: </p>
+    </div>
+    <br>
+    <button id="restart">Recommencer</button>
+    <br>
+    <button id="reponse">Afficher la réponse</button>
+    <p id="debug"></p>
 </body>
+</html>
